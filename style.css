@@ -7,8 +7,10 @@ body{
 h1{
     background-color:rgb(37, 199, 91);
     margin-left: 0%;
-    height: 100%;
-    display:inline-table;
+    height: 7%;
+    border-radius: 10%;
+    border-top-left-radius: 55px;
+    border-width: 0px;
     position: relative;
     text-align:left;
     text-decoration:double;
@@ -17,4 +19,18 @@ h2{
     position: relative;
     text-align:center;
     background-color:powderblue;
+}
+ 
+
+.h3{
+    align-items: center;
+
+}
+.fuc{
+    display:flex;
+    width:5px; 
+    position: center;
+}
+.k{
+    image-resolution: center;
 }
