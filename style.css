@@ -20,7 +20,12 @@ h2{
     text-align:center;
     background-color:powderblue;
 }
- 
+.att{
+    text-align:center;
+}
+ a{
+     margin-left:150px;
+ }
 
 .h3{
     align-items: center;
