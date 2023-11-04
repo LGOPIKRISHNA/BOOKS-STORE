@@ -1,14 +1,15 @@
 body{
     color:blueviolet;
-    background-image:url('kri.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:rgb(207, 14, 143);
+    border-style:solid;
+    box-sizing: content-box;
 }
 h1{
     background-color:rgb(37, 199, 91);
     margin-left: 0%;
-     margin-right:0%;
+    margin-right:0%;
     height: 7%;
+    color:black;
     border-radius: 10%;
     border-top-left-radius: 55px;
     border-width: 0px;
@@ -21,22 +22,30 @@ h2{
     text-align:center;
     background-color:powderblue;
 }
-.att{
+ .att{
     text-align:center;
-}
+    
+ }
  a{
-     margin-left:150px;
+    margin-left:150px;
+    color:black;
  }
 
 .h3{
     align-items: center;
+    display: inline-block;
 
 }
-.fuc{
-    display:flex;
-    width:5px; 
-    position: center;
-}
+
 .k{
     image-resolution: center;
+}
+.cor{
+    text-decoration-color: aqua;
+    margin-left :35%;
+}
+
+.picture{
+    display: flex;
+    flex-direction:row;
 }
