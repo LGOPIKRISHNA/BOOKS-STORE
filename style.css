@@ -1,0 +1,20 @@
+body{
+    color:blueviolet;
+    background-image:url('kri.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    background-color:rgb(37, 199, 91);
+    margin-left: 0%;
+    height: 100%;
+    display:inline-table;
+    position: relative;
+    text-align:left;
+    text-decoration:double;
+}
+h2{
+    position: relative;
+    text-align:center;
+    background-color:powderblue;
+}
