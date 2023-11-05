@@ -24,7 +24,7 @@ h2{
 }
  .att{
     text-align:center;
-    
+    position:fixed;
  }
  a{
     margin-left:130px;
