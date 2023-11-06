@@ -1,6 +1,6 @@
 body{
-    color:blueviolet;
-    background-color:rgb(207, 14, 143);
+    background-img:url('g.jpeg');
+    background-repeat:no repeat;
     border-style:solid;
     box-sizing: content-box;
 }
