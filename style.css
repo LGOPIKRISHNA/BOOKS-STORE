@@ -45,7 +45,7 @@ h2{
 
 .picture{
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
 }
 
 
