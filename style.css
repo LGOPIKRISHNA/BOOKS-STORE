@@ -2,8 +2,7 @@ body{
     background-image:url('g.jpeg');
     background-repeat:no repeat;
     background-size:cover;
-    border-style:solid;
-    box-sizing: content-box;
+    
 }
 h1{
     background-color:rgb(37, 199, 91);
