@@ -2,15 +2,15 @@
     <head>
 
     </head>
-    <body bgcolor="cyan">
+    <body bgcolor="cyan"><form action="inde.html">
         <center><font size="10px" color="green"><u>Register</u></font</center>
            <center> <fieldset>
-                Enter name:<input type="text" placeholder="Enter name"><br>
-                Enter email:<input type="email" placeholder="Enter Email"><br>
-                Enter password:<input type="password" placeholder="Enter password" name="password"><br>
-                Confirm password:<input type="password" placeholder="confirm password" name="confirm password"><br>
-                Enter Distict:<input type="Dist" placeholder="Enter Distict" name="state"><br>
-                Enter State:<input type="state" placeholder="Enter state" name="state"><br>
+                Enter name:<input type="text" placeholder="Enter name" required pattern="^[A-Za-z0-9]+"><br>
+                Enter email:<input type="email" placeholder="Enter Email" required  pattern="^[A-Za-z0-9]+[.com]$"><br>
+                Enter password:<input type="password" placeholder="Enter password" name="password" required  pattern="^[A-Za-z0-9]+"><br>
+                Confirm password:<input type="password" placeholder="confirm password" name="confirm password" required  pattern="^[A-Za-z0-9]+"><br>
+                Enter Distict:<input type="Dist" placeholder="Enter Distict" name="state" required  pattern="^[A-Za-z]+"><br>
+                Enter State:<input type="state" placeholder="Enter state" name="state" required  pattern="^[A-Za-z]+"><br>
                 Select class:
                 <select>
                     <option>----select----</option>
@@ -22,5 +22,6 @@
                <a href="inde.html"> <button>submit</button></a>
             </fieldset>
             </center>
+    </form>
     </body>
 </html>
