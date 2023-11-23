@@ -1,13 +1,53 @@
 <html>
     <head>
-        <link rel="stylesheet" href="book1.css">
+        <style>
+            .main{
+                display: flex;
+                flex-direction: row;
+                
+                padding-left: 10px;
+            }
+            .inside1{
+                box-sizing: border-box;
+
+            }
+            .tr{
+    text-align:center;
+    position:flex;
+    background-color:white;   
+            }
+            
+            .sub{
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+            }
+        </style>
     </head>
-    <body>
+    <body bgcolor="cyan">
+
         <div class="tr"><h1><font color="orange"><a href="inde.html">Home</a>&NonBreakingSpace; &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;<a href="contact.html">Contact_us</a>&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</font></h1></div>
-        <div class="book1-inside1">
-            <div class="inside1"><a href="book4-inside1.html"><img src="book4-inside1.jpg"></img></a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="inside1"><a href="book4-inside2.html"><img src="book4-inside2.jpg"></img></a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          
+
+        <div class="main">
+
+            <div class="sub"><div class="inside1">
+            <img src="book4-inside1.jpg"></img>
+            <div><a href="book4-inside1.html"><button style="font-size:40px;">Add to cart</button></a></div>
+            </div></div>&nbsp;
+
+            <div class="sub"><div class="inside1">
+                <img src="book4-inside2.jpg"></img>
+                <div><a href="book4-inside2.html"><button style="font-size:40px;">Add to cart</button></a></div>
+                </div></div>&nbsp;
+
+            
+
+             
+            
+
+
+            
         </div>
+        
     </body>
 </html>
