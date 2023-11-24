@@ -1,16 +1,43 @@
 <html>
     <head>
+        <style>
+            .c{
+            margin-left: 550px;
+            }
+            .l{
+                padding:10px;
+                font-style:italic;
+                font-size: 30px;
 
+            }
+            .a{
+                padding:10px;
+                border-radius: 30px;
+                border-color: aquamarine;
+                background-color:khaki;
+            }
+            .a:hover
+            {
+                background-color: aquamarine;
+            }
+        </style>
     </head>
-    <body bgcolor="cyan"><form action="inde.html">
-        <center><font size="10px" color="green"><u>Register</u></font</center>
-           <center> <fieldset>
-                Enter name:<input type="text" placeholder="Enter name" required pattern="^[A-Za-z0-9]+"><br>
-                Enter email:<input type="email" placeholder="Enter Email" required  pattern="[a-z0-9._%±]+@ [a-z0-9.-]+. [a-z] {2,}$"><br>
-                Enter password:<input type="password" placeholder="Enter password" name="password" required  pattern="^[A-Za-z0-9]+"><br>
-                Confirm password:<input type="password" placeholder="confirm password" name="confirm password" required  pattern="^[A-Za-z0-9]+"><br>
-                Enter Distict:<input type="Dist" placeholder="Enter Distict" name="state" required  pattern="^[A-Za-z]+"><br>
-                Enter State:<input type="state" placeholder="Enter state" name="state" required  pattern="^[A-Za-z]+"><br>
+    <body bgcolor="whitesmoke"><form action="inde.html">
+        <center><u><h1>Register</h1></u></center>
+        <div class="c">
+            <div class="l" id="k1">
+                Enter name:<input type="text" class="a" placeholder="Enter name" size="25px" required pattern="^[A-Za-z0-9]+"><br></div>
+                <div class="l" id="k2">
+                Enter email:<input type="email"  class="a" placeholder="Enter Email" size="24px" required  pattern="[a-z0-9._%±]+@ [a-z0-9.-]+. [a-z] {2,}$"><br></div>
+                <div class="l" id="k3">
+                Enter password:<input type="password"  class="a" placeholder="Enter password" name="password" size="25px" required  pattern="^[A-Za-z0-9]+"><br></div>
+                <div class="l" id="k4">
+                Confirm password:<input type="password"  class="a" placeholder="confirm password" name="confirm password" size="20px" required  pattern="^[A-Za-z0-9]+"><br></div>
+                <div class="l" id="k5">
+                Enter Distict:<input type="Dist"   class="a" placeholder="Enter Distict" name="state" size="29px" required  pattern="^[A-Za-z]+"><br></div>
+                <div class="l" id="k6">
+                Enter State:<input type="state"  class="a" placeholder="Enter state" name="state"  size="31px" required  pattern="^[A-Za-z]+"><br></div>
+                <div class="l" id="k7">
                 Select class:
                 <select>
                     <option>----select----</option>
@@ -18,10 +45,10 @@
                     <option>11th</option>
                     <option>12th</option>
                     <option>Graduation</option>
-                </select><br>
-               <a href="inde.html"> <button>submit</button></a>
-            </fieldset>
-            </center>
+                </select><br></div>
+
+              <div class="l" id="k8"><a href="inde.html"> <button>submit</button></a></div>
+        </div>
     </form>
     </body>
 </html>
