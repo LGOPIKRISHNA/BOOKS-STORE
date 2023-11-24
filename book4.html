@@ -31,12 +31,12 @@
         <div class="main">
 
             <div class="sub"><div class="inside1">
-            <img src="book4-inside1.jpg"></img>
+            <img src="book4-inside1.jpg"  onmouseover="fun(this)" onmouseout="bun(this)"></img>
             <div><a href="book4-inside1.html"><button style="font-size:40px;">Add to cart</button></a></div>
             </div></div>&nbsp;
 
             <div class="sub"><div class="inside1">
-                <img src="book4-inside2.jpg"></img>
+                <img src="book4-inside2.jpg"  onmouseover="fun(this)" onmouseout="bun(this)"></img>
                 <div><a href="book4-inside2.html"><button style="font-size:40px;">Add to cart</button></a></div>
                 </div></div>&nbsp;
 
@@ -48,6 +48,20 @@
 
             
         </div>
+
+        <script>
+            function fun(x)
+            {
+                x.style.width=550;
+                x.style.height=850;
+            }
+            function bun(x)
+            {
+                x.style.width=350;
+                x.style.height=525;
+            }
+        </script>
+
         
     </body>
 </html>
