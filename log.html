@@ -23,9 +23,30 @@
                 border-width: 2px;
                 border-style: groove;
             }
+            body{
+                background-image: url('background.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .left{
+                float:left;
+                box-sizing: content-box;
+                border-radius: 10px;
+                border-color: blueviolet;
+                color:whitesmoke;
+                display: flex;
+               
+                flex-direction: left;
+
+            }
+            .fly{
+                
+                padding:20px;
+                flex-direction: left;
+            }
         </style>
     </head>
-    <body bgcolor="white-black-orange">
+    <body ><hr>
         <div class="main">
             <div class="sub"><a href="loginedpage.html">Buy Books</a></div>
               <div class="sub"> <a href="contact2.html">Contact Us</a>&nbsp</div>
@@ -33,5 +54,31 @@
               <div class="sub"> <a href="feedback2.html">Feed Back</a>&nbsp</div>
               <div class="sub"><details><ul><li>NAME:<text></text></li> <li>Email-id:</li> <li>phone_no:-</li> <li><a href="addedtocart.html"><button>ADDED TO cart</button></a></li>  </ul></details>&nbsp</div>
 </div>
+
+<hr>
+<div class="left">
+    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
+    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div><br>
+    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
+    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
+    
+</div>
+<script>
+    function fun(x)
+    {
+        x.style.width=350;
+        x.style.height=500;
+    }
+    function bun(x)
+    {
+        x.style.width=250;
+        x.style.height=300;
+    }
+</script>
+
+
+
+
+
     </body>
 </html>
