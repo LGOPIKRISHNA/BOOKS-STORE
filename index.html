@@ -1,6 +1,8 @@
 
+
 <html>
     <head>
+        <center class="fon">Online-Book-Store</center>
         <style>
             body{
                 background-image: url(b.jpg);
@@ -29,13 +31,55 @@
             background-color:orange;
             
             }
+            @keyframes krishna
+            {
+                0%{
+                    color:brown;
+                    margin-left:100px;
+                }
+                25%{
+                    color:bisque;
+                    margin-left:250px;
+                }
+                50%{
+                    color:color-mix(in srgb-linear, orange 20%, whitesmoke 80%);
+                    margin-left:500px;
+                }
+                75%{
+                    color:color(from cyan srgb r g b);
+                    margin-left:750px;
+                }
+                100%{
+                    color:orangered;
+                    margin-left:900px;
+                }
+            }
+            .fon{
+                font-style: italic;
+                margin-left: 500px;
+                display: flex;
+                flex-direction: left;
+                background-color: black;
+                display:inline-block;
+                font-size: 50px;
+                color:rgba(255, 158, 30, 0.466);
+                text-decoration: underline;
+                animation-name:krishna;
+                animation-delay: 0s;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                
+                animation-timing-function: linear;
+
+            }
         </style>
         
     </head>
     <body>
         <div class="tag">
             
-        <div class="high"><a href="login.html"><p>login</p></a></div>
+       <div class="high"><a href="login.html"><p>login</p></a></div>
         <div class="high"><a href="contact.html"><p>Contact us</p></a></div>
         <div class="high"><a href="about1.html"><p>About us</p></a></div>
         <div class="high"><a href="feedback1.html"><p>FeedBack</p></a></div>
