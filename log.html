@@ -1,6 +1,6 @@
 <html>
     <head>
-        <h1><center><img src="phot1.png"></center></h1>
+        <h1><center  class="fon1">BOOKS-STORE</center></h1>
         <style>
             .main{
                 margin-left:10px;
@@ -35,7 +35,7 @@
                 border-color: blueviolet;
                 color:whitesmoke;
                 display: flex;
-               
+               position: fixed;
                 flex-direction: left;
 
             }
@@ -44,11 +44,81 @@
                 padding:20px;
                 flex-direction: left;
             }
+            .fon{
+                display: flex;
+                flex-direction: left;
+                background-color: black;
+                display:inline-block;
+            
+                font-size: 50px;
+                color:rgba(255, 158, 30, 0.466);
+                text-decoration: underline;
+                animation-name:gopi;
+                animation-delay: 0s;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+            }
+            .fon1{
+                display: flex;
+                flex-direction: left;
+                margin-left: 500px;
+                
+                font-size: 50px;
+                color:rgba(255, 158, 30, 0.466);
+                text-decoration: underline;
+                animation-name:gopi1;
+                animation-delay: 0s;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                animation-timing-function: linear;
+            }
+            @keyframes gopi
+            {
+                0%{
+                    color:green;
+                    margin-left:100px;
+                    
+                }
+                50%{
+                    color:cyan;
+                    margin-left:500px;
+
+
+                }
+                100%{
+
+                    color:deeppink;
+                    margin-left:900px;
+                }
+            }
+            @keyframes gopi1
+            {
+                0%{
+                    color:gold;
+                    
+                    
+                }
+                50%{
+                    color:darkorange;
+                    
+
+
+
+                }
+                100%{
+
+                    color:deeppink;
+                    
+                }
+            }
         </style>
     </head>
     <body ><hr>
         <div class="main">
-            <div class="sub"><a href="loginedpage.html">Buy Books</a></div>
+            <div class="sub" ><a href="loginedpage.html">Buy Books</a></div>
               <div class="sub"> <a href="contact2.html">Contact Us</a>&nbsp</div>
              <div class="sub"> <a href="about.html">About Us</a>&nbsp</div>
               <div class="sub"> <a href="feedback2.html">Feed Back</a>&nbsp</div>
@@ -56,11 +126,12 @@
 </div>
 
 <hr>
+<sample><examples class="fon">Example Books</examples></sample>
 <div class="left">
-    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
-    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div><br>
-    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
-    <div class="fly"><img src="p3.png" width="250px" height="300px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
+    <div class="fly"><img src="f1.jpg" width="120px" height="250px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
+    <div class="fly"><img src="f2.jpg" width="120px" height="250px" onmouseover="fun(this)" onmouseout="bun(this)"></div><br>
+    <div class="fly"><img src="f3.jpg" width="120px" height="250px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
+    <div class="fly"><img src="f4.jpg" width="120px" height="250px" onmouseover="fun(this)" onmouseout="bun(this)"></div>
     
 </div>
 <script>
@@ -71,8 +142,8 @@
     }
     function bun(x)
     {
-        x.style.width=250;
-        x.style.height=300;
+        x.style.width=120;
+        x.style.height=250;
     }
 </script>
 
