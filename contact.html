@@ -2,28 +2,65 @@
   <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
+<title >
 CONTACT-US
 </title>
+
+<style>
+    .a{
+        padding:10px;
+        border-radius: 30px;
+    }
+    .a:hover{
+        background-color: burlywood;
+        color:cadetblue;
+    }
+    .c{
+        padding:10px;
+        border-radius: 49px;
+    }
+    .c:hover{
+        background-color: chartreuse;
+        color:cornflowerblue;
+    }
+    .b{
+        border-radius: 19px;
+        color:black;
+    }
+    .b:hover{
+        background-color:darkgrey;
+    }
+    .d{
+        font-size: 30px;
+        color: brown;
+        font-style: italic;
+    }
+    .bor{
+        
+        box-sizing: 30px;
+        display: inline-block;
+    }
+</style>
   </head>
-<body bgcolor="violet">
+<body bgcolor="violet"><form action="t.html">
 <center> 
-<fieldset>
+<div class="bor">
 
-<h1><u>Contact Us</h1>
+<h1><u><div class="d">Contact Us</div></h1>
 
-<font color="black">Enter Name:</font><input type="text" placeholder="Enter name"><br>
-<font color="black">Enter Email:</font><input type="text" placeholder="Enter valid email address"><br>
+<font color="black">Enter Name:</font><input type="text" class="a" required pattern="[a-zA-Z0-9]+" placeholder="Enter name"><br>
+<font color="black">Enter Email:</font><input type="email"   class="a"  required pattern="^[a-zA-Z0-9]+*[@gmail.com]$" placeholder="krishna@gmail.com"><br>
 
-&nbsp;<textarea rows="4" cols="31" name="comment" placeholder="Enter comment here"></textarea>
-<br><br><br><a href="t.html">
-<button><font color="green">
+&nbsp;<textarea rows="4" cols="31" name="comment"  class="b" required  placeholder="Enter comment here"></textarea>
+<br><br><br>
+<button class="c"><font color="green">
 Submit
 </font>
-</button></a>
-</fieldset>
+</button>
+</div>
 </center>
-  <h2>Phone no:<a href="phoneto:9876543219">9876543219</a><br><br>Email:<a href="mailto:lgopikrishna84@gmail.com">krishna@gmail.com</a></h2>
+  <h2 class="d">Phone no:<a href="phoneto:9876543219">9876543219</a><br><br>Email:<a href="mailto:lgopikrishna84@gmail.com">krishna@gmail.com</a></h2>
+  </form>
 </body>
 
 </html>
