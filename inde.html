@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -8,19 +9,49 @@
 
         <link rel="stylesheet" href="style.css">
         <style>
+            @keyframes frames
+            {
+                0%{
+                    color:bisque;
+                    margin-left:50px;
+                }
+                50%{
+                    color:beige;
+                    margin-left:150px;
+                }
+                100%{
+                    color:azure;
+                    margin-left:300px;
+                }
+            }
             .marq{
                 display:flex;
                 flex-direction: row;
             }
-            h2{
-    background-color:blue;
+            .kk{
+                font-size: 35px;
+                background-color: brown;
+                cursor: pointer;
+                animation-name: frames;animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-delay: 0s;
+                animation-direction: alternate-reverse;
+                border-radius: 30px;
+            }
+            .kk:hover{
+                background-color: darkorange;
+                font-style: italic;
+
+            }
+            h4{
+    background-color:orange;
 }
         </style>
     </head>
    
-    <body bgcolor="orange"><div class="marq"><img src="phot1.png">
-       
-        <h2><marquee><font color="white" >Welcome!you can see want ever you interested on Your Books</font></marquee></h2>
+    <body bgcolor="orange">       
+        <h4><font color="white" class="kk" >Welcome!you can see want ever you interested on Our Books</font></h4>
           </div> <div class="att"><h1>
             <a href="index.html">Home</a>&nbsp
             <a href="contact3.html">Contact Us</a>&nbsp
