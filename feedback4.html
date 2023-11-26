@@ -8,6 +8,17 @@
                 alert("WECLOME PLEASE GIVE US FEEDBACK");
             
         </script>
+        <style>
+            .a{
+                background-color: blanchedalmond;
+                font-size: 10px;
+                padding: 6px;
+                border-radius: 15px;
+            }
+            .a:hover{
+                background-color: chartreuse;
+            }
+        </style>
     </head>
     <body bgcolor="white"><form action="log.html">
         <fieldset>
@@ -17,14 +28,14 @@
         <fieldset>
             <center>
                 How do you feel your overall experience?<br>
-               <input type="radio" name="good">Good</input>
-               <input type="radio" name="good">Better</input>
-               <input type="radio" name="good">worst</input><br>
-            Enter name:<input type="text" placeholder="Enter name"><br>
-            Enter email Id:<input type="text" placeholder="Enter email"><br>
-            Enter your age:<input type="text" placeholder="Enter age"><br>
-           Gender: <input type="radio" name="male">male</input>
-            <input type="radio" name="male">female</input><br>
+               <input type="radio" name="good" required>Good</input>
+               <input type="radio" name="good" required>Better</input>
+               <input type="radio" name="good" required>worst</input><br>
+            Enter name:<input type="text" placeholder="Enter name" class="a" required pattern="[a-zA-Z0-9]+"><br>
+            Enter email Id:<input type="text" placeholder="Enter email" class="a" required  pattern="[a-z0-9._%±]+@ [a-z0-9.-]+. [a-z] {2,}$"><br>
+            Enter your age:<input type="text" placeholder="Enter age"  class="a" required="age"><br>
+           Gender: <input type="radio" name="male" required="Gender">male</input>
+            <input type="radio" name="male" required="Gender">female</input><br>
            <a href="inde.html"><input type="submit" value="submit"></a>
             </center>
         </fieldset>
