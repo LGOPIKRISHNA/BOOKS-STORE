@@ -38,7 +38,7 @@
         
     </head>
     <body>
-        <form action="log.html">
+        <form onsubmit="bun()">
         <center><br><br><br><br><br><table border="1"><font size="19px">
         <b>Username:</b><input type="text" placeholder="Enter username/Gmail/phn number" class="a" required pattern="^[A-Za-z0-9]+"><br>
         <b>Password:</b><input type="password" placeholder="Enter password" name="password" class="a" required pattern="[0-9]+"><br>
@@ -53,6 +53,11 @@
 
                     alert("successfully logining as guest");
                     window.open('inde.html');
+                }
+            function bun()
+                {
+                    alert('Welcome back');
+                    window.open('log.html');
                 }
         </script>
     </body>
