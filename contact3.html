@@ -58,25 +58,32 @@ padding: 50px;
     }
 </style>
   </head>
-<body ><form action="t3.html">
+<body ><form onsubmit="fun()">
 <center> 
 <div class="bor">
 
 <h1><u><div class="d">Contact Us</div></h1>
 
-<font color="black" size="6px">Enter Name:</font><input type="text" class="a" required pattern="[a-zA-Z0-9]+" placeholder="Enter name"><br>
-<font color="black" size="6px">Enter Email:</font><input type="email"   class="a"  required pattern="^[a-zA-Z0-9]+*[@gmail.com]$" placeholder="krishna@gmail.com"><br>
+<font color="whitesmoke" size="6px">Enter Name:</font><input type="text" class="a" required pattern="[a-zA-Z0-9]+" placeholder="Enter name"><br>
+<font color="whitesmoke" size="6px">Enter Email:</font><input type="email"   class="a"  required pattern="^[a-zA-Z0-9]+*[@gmail.com]$" placeholder="krishna@gmail.com"><br>
 
 &nbsp;<textarea rows="4" cols="31" name="comment"  class="b" required  placeholder="Enter comment here"></textarea>
 <br><br><br>
-<button class="c">
-Submit
+<input type="submit" name="submit" class="c">
 
 </button>
 </div>
 </center>
   <h2 class="d">Phone no:<a href="phoneto:9876543219"><div class="cont">9876543219</div></a><br><br>Email:<a href="mailto:lgopikrishna84@gmail.com"><div class="cont">krishna@gmail.com</div></a></h2>
   </form>
+  <script>
+    function fun()
+    {
+        alert('successfully submited');
+        window.open('t3.html');
+    }
+
+  </script>
 </body>
 
 </html>
