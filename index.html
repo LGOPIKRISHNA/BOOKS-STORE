@@ -29,8 +29,12 @@
                 text-decoration: solid;
                 
             }
+            .high{
+                cursor: pointer;
+            }
             .high:hover{
             background-color:orange;
+            color:aqua;
             
             }
             @keyframes krishna
@@ -81,12 +85,39 @@
     <body>
         <div class="tag">
             
-       <div class="high"><a href="login.html"><p>login</p></a></div>
-        <div class="high"><a href="contact.html"><p>Contact us</p></a></div>
-        <div class="high"><a href="about1.html"><p>About us</p></a></div>
-        <div class="high"><a href="feedback1.html"><p>FeedBack</p></a></div>
-        <div class="high"><a href="help.html"><p>Help</p></a></div>
+       <div class="high" onclick="fun()"><p>login</p></div>
+        <div class="high" onclick="fun1()"><p>Contact us</p></div>
+        <div class="high" onclick="fun2()"><p>About us</p></div>
+        <div class="high" onclick="fun3()"><p>FeedBack</p></div>
+        <div class="high" onclick="fun4()"><p>Help</p></div>
         
         </div>
+        <script>
+            function fun()
+            {
+                alert('Welcome to login page');
+                window.open('login.html');
+            }
+            function fun1()
+            {
+                alert('Welcome to contact page');
+                window.open('contact.html');
+            }
+            function fun2()
+            {
+                alert('Welcome to about page');
+                window.open('about1.html');
+            }
+            function fun3()
+            {
+                alert('Welcome to feedback page');
+                window.open('feedback1.html');
+            }
+            function fun4()
+            {
+                alert('Welcome to help page');
+                window.open('help.html');
+            }
+        </script>        
     </body>
 </html>
