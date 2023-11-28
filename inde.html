@@ -44,20 +44,86 @@
                 font-style: italic;
 
             }
+
+
+
+
+
+
+            .thr{
+                cursor: pointer;
+                color:white;
+                padding-left:10%;
+                
+            }
+            .thr1{
+                background-color: black;
+                color:white;
+                border-radius: 40px;
+            }
+            .thr:hover{
+                background-color:;
+            }
             h4{
     background-color:orange;
+}
+h1{
+    background-color:black;
+    display: flex;
+    flex-direction: left;
+   border-radius: 40px;
+padding-left:0%;
+}
+
+
+
+
+
+
+
+h2{
+    background-color:black;
+}
+ .att{
+    text-align:center;
+    position:fixed;
+    float: left;
+
+ }
+ a{
+    margin-left:130px;
+    color:black;
+ }
+
+.h3{
+    align-items: center;
+    display: inline-block;
+
+}
+
+.k{
+    image-resolution: center;
+}
+.cor{
+    text-decoration-color: aqua;
+    margin-left :35%;
+}
+
+.picture{
+    display: flex;
+    flex-direction:column;
 }
         </style>
     </head>
    
     <body bgcolor="orange">       
         <h4><font color="white" class="kk" >Welcome!you can see want ever you interested on Our Books</font></h4>
-          </div> <div class="att"><h1>
-            <a href="index.html">Home</a>&nbsp
-            <a href="contact3.html">Contact Us</a>&nbsp
-            <a href="about.html">About Us</a>&nbsp
-            <a href="feedback.html">Feed Back</a>&nbsp
-            <a href="help.html">Help</a>&nbsp
+          </div> <div class="thr1"><h1>
+            <div onclick="t1()" class="thr">Home&nbsp</div>
+            <div onclick="t2()" class="thr">Contact Us</div>&nbsp
+            <div onclick="t3()" class="thr">About Us</div>&nbsp
+            <div onclick="t4()" class="thr">Feed Back</div>&nbsp
+            <div onclick="t5()" class="thr">Help</div>&nbsp
             
         </h1> </div>  
         <div class="picture">    
@@ -81,6 +147,31 @@
             {
                 x.style.width=500;
                 x.style.height=500;
+            }
+            function t1()
+            {
+                alert('Welcome to Home page');
+                window.open('index.html');
+            }
+            function t2()
+            {
+                alert('Welcome to contact page');
+                window.open('contact3.html');
+            }
+            function t3()
+            {
+                alert('Welcome to about page');
+                window.open('about.html');
+            }
+            function t4()
+            {
+                alert('Welcome to feedback page');
+                window.open('feedback.html');
+            }
+            function t5()
+            {
+                alert('Welcome to help page');
+                window.open('help.html');
             }
         </script>
     
