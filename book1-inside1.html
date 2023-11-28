@@ -36,20 +36,21 @@
    
 
    <div> <h1>
-        <form id="q1" action="book1.html"><font color="white">
+        <form id="q1" onsubmit="fun()"><font color="white">
         <Details>
             <h2><Price:119>Price:100$</Price:119></h2>
             <h2><Price:119>Category:  Charithra char</Price:119></h2>
             <h2><Price:119>Tag: Hindii</Price:119></h2>
             <h2><Price:119>Quantity:<input type="number" value="number" id="h1" required pattern="[0-9]+"></Price:119></h2>
         </Details></font>
-        <center><h1><input type="submit" value="submit" onclick="fun()"></h1></center></div>
+        <center><h1><input type="submit" value="submit"></h1></center></div>
     </form>
     </h1></div>
       <script>
         function fun()
         {
                 alert("successfully added to cart");
+                window.open('book1.html');
         }
       </script>  
     </body>
