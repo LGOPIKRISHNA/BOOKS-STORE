@@ -20,7 +20,7 @@
             }
             .ha{
                 font-size: 25px;
-                border: 15px solid black;
+                border: 15px solid green;
                 border-radius: 3%;
                 width: fit-content;
                 color: coral;
@@ -37,14 +37,14 @@
                 border-radius: 20px;
                 font-size: 25px;
             }
-              body{
+            body{
                 background-image: url('feedback.webp');
                 background-repeat: no-repeat;
                 background-size: cover;
             }
         </style>
     </head>
-    <body><form action="loginedpage.html">
+    <body><form  onsubmit="fun()">
         
             <center><H1><FONT COLOR="BLUE"><u>FEED-BACK</u></FONT></H1></center>
         
@@ -67,5 +67,12 @@
             </center>
         
     </form>
+    <script>
+        function fun()
+        {
+            alert('successfully submited');
+            window.open('loginedpage.html');
+        }
+    </script>
     </body>
 </html>
