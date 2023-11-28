@@ -44,7 +44,7 @@
             }
         </style>
     </head>
-    <body><form action="inde.html">
+    <body><form  onsubmit="fun()">
         
             <center><H1><FONT COLOR="BLUE"><u>FEED-BACK</u></FONT></H1></center>
         
@@ -67,5 +67,12 @@
             </center>
         
     </form>
+    <script>
+        function fun()
+        {
+            alert('successfully submited');
+            window.open('inde.html');
+        }
+    </script>
     </body>
 </html>
