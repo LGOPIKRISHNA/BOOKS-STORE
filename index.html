@@ -1,5 +1,6 @@
 
 
+
 <html>
     <head>
          <meta charset="UTF-8">
@@ -12,7 +13,7 @@
             }
             .tag{
                
-                margin-left: 20%;
+                margin-left: 12%;
                 border-radius: 20px;
                 border-style: groove;
                 
@@ -21,7 +22,7 @@
                 float:left;
                 padding-left: 15px;
                 background-color: rgb(0, 139, 19);
-                font-size:55px;
+                font-size:50px;
                 justify-content: center;
                 margin-left: 30px;
                 border-radius: 10px;
@@ -90,9 +91,13 @@
         <div class="high" onclick="fun2()"><p>About us</p></div>
         <div class="high" onclick="fun3()"><p>FeedBack</p></div>
         <div class="high" onclick="fun4()"><p>Help</p></div>
-        
+        <div class="high" onclick="fun0()"><p>Register</p></div>        
         </div>
         <script>
+            function fun0()
+            {
+                window.open('Register.html');
+            }
             function fun()
             {
                 alert('Welcome to login page');
@@ -100,22 +105,22 @@
             }
             function fun1()
             {
-                alert('Welcome to contact page');
+                
                 window.open('contact.html');
             }
             function fun2()
             {
-                alert('Welcome to about page');
+                
                 window.open('about1.html');
             }
             function fun3()
             {
-                alert('Welcome to feedback page');
+                
                 window.open('feedback1.html');
             }
             function fun4()
             {
-                alert('Welcome to help page');
+                
                 window.open('help.html');
             }
         </script>        
