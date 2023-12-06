@@ -1,9 +1,18 @@
+
 <html>
     <head>
          <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <h1><center><img src="phot1.png"></center></h1>
+        <h1><center><img src="phot1.png"></center></h1><div class="hi"><input type="search" class="pl" id="o" required  pattern="[a-zA-Z0-9]" placeholder="search here"><input type="submit" onclick="search()" class="pl" placeholder="search"></div>
         <style>
+            .hi{
+                position: relative;
+                left:65%;
+                
+            }
+            .pl{
+                font-size:25px;
+            }
             .main{
                 margin-left:10px;
                 background-color: bisque;
@@ -47,14 +56,14 @@
                
                   
                 <div class="picture">    
-               <div class="fuc"><a href="book12.html"><img src="book1.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">1.mohjitvijayji-maharaja-books</font></img></a></div>
-               <div class="fuc"><a href="book22.html"><img src="book2.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">2.YUGBHUSHANSURI mohjitvijayji-books</font></img></a>
+               <div class="fuc"><a href="book12.html"><img src="book1.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">1.mohjitvijayji-maharaja-books(MMB)</font></img></a></div>
+               <div class="fuc"><a href="book22.html"><img src="book2.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">2.YUGBHUSHANSURI(YMB)</font></img></a>
             </div><BR>
-                <div class="fuc"><a href="book32.html"><img src="p3.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">3.PRAVIN BHAI MOTO</font></img></a>
+                <div class="fuc"><a href="book32.html"><img src="p3.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">3.PRAVIN BHAI MOTO(PBM)</font></img></a>
             </div>
                   <div class="fuc"><a href="book42.html"><img src="p4.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">4.OTHERS</font></img></a>
             </div>
-                      <div class="fuc"><a href="book52.html"><img src="p5.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">5.GANGOTRI GRANTHMALA</font></img></a>
+                      <div class="fuc"><a href="book52.html"><img src="p5.png" onmouseover="fun(this)" height="300px" width="300px" onmouseout="bun(this)"><font size="35%">5.GANGOTRI-GRANTHMALA(ggb)</font></img></a>
             </div>
                 </div>
                  <script>
@@ -67,6 +76,27 @@
                     {
                         x.style.width=300;
                         x.style.height=300;
+                    }
+                    function search(){
+                        var a=document.getElementById("o").value;
+                        if(a=="MMB"){
+                            window.open('book12.html');    
+                        }
+                        else if(a=="YMB"){
+                            window.open('book22.html'); 
+                        }
+                        else if(a=="PBM"){
+                            window.open('book32.html'); 
+                        }
+                        else if(a=="OTHERS"){
+                            window.open('book42.html'); 
+                        }
+                        else if(a=="ggb"){
+                            window.open('book52.html'); 
+                        }
+                        else{
+                            alert("book not found");
+                        }
                     }
                 </script>
     </body>
